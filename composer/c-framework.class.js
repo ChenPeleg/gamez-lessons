@@ -1,6 +1,7 @@
 export class CClass {
-    constructor(tag = 'div') {
+    constructor(html = '', tag = 'div') {
         this.elem = document.createElement(tag);
+        this.elem.innerHTML = html;
     }
     append(...CFuncChild) {
         CFuncChild.forEach((c) => this.elem.appendChild(c.elem));

@@ -1,6 +1,6 @@
-export function CFn(tag = 'div') {
-    tag = tag || 'div';
+export function CFn(html = '', tag = 'div') {
     this.elem = document.createElement(tag);
+    this.elem.innerHTML = html;
     this.append = function (...CFuncChild) {
         CFuncChild.forEach((c) => this.elem.appendChild(c.elem));
     };
