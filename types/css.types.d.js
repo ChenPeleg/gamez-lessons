@@ -177,5 +177,4 @@ const CSSProps = {
     'grid-template-columns': '',
     filter: '',
 };
-export type CSSObject = Partial<typeof CSSProps>;
-export type CSS = Record<string, CSSObject>;
+/** @typedef {Partial<typeof CSSProps> } CSSObject*/
