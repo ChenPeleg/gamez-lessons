@@ -3,6 +3,8 @@
     "checkJs": true,
     "allowJs": true,
     "typeRoots": ["./types"],
-    "outFile": "./justANameToMakeTSHappy.js"
+    "outFile": "./justANameToMakeTSHappy.js",
+    "module": "ES2022",
+    "noEmitOnError": false
   }
 }
